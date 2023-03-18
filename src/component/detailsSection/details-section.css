@@ -1,0 +1,27 @@
+#details-section {
+  padding: 110px 0;
+}
+.emp-img {
+  margin-bottom: 60px;
+}
+.emp-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.detail-group {
+  margin: 15px 0;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+
+.detail-group span {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .details-img {
+    display: none;
+  }
+}

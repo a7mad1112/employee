@@ -1,0 +1,26 @@
+
+header {
+  background-color: rgb(240, 240, 240);
+  box-sizing: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.logout i svg {
+  color: brown;
+  /* font-style: 25px !important; */
+}
+
+
