@@ -34,10 +34,16 @@
   border-radius: 5px;
   border: none;
   outline: none;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 8px 5px;
 }
 
 .create-citizen-form input:focus {
   border: none;
+}
+
+.create-citizen-form p {
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
 }

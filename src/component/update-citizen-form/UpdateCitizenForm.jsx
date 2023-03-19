@@ -14,10 +14,10 @@ const UpdateCitizenForm = () => {
         <i onClick={closeForm} className="close-btn">
           <AiOutlineClose />
         </i>
-        <h2 className="">انشاء حساب لمواطن</h2>
+        <h2 className="">تعديل بيانات المواطن</h2>
         <div className="form-group">
           <input type="text" name="name" placeholder="اسم المواطن" />
-          <p className="name-err">23</p>
+          <p className="name-err"></p>
         </div>
 
         <div className="form-group">
