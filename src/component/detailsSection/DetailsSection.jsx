@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import empImg from "../../assets/emp.jpg";
-import empDetailsImg from "../../assets/florencia-viadana-1J8k0qqUfYY-unsplash.jpg";
 import "./details-section.css";
+import { createCitizenFormUIActions } from "./../../store/slices/createCitizenFormUI";
+import { updateCitizenFormUIActions } from './../../store/slices/updateCitizenFormUI';
+import { deleteCitizenFormUIActions } from './../../store/slices/deleteCitizenFormUI';
 
 const DetailsSection = () => {
   let [emp, setEmp] = useState({
@@ -12,6 +15,18 @@ const DetailsSection = () => {
     address: "جنين",
     imgSrc: empImg,
   });
+  const dispatch = useDispatch();
+
+
+  const showCreateForm = () => {
+    dispatch(createCitizenFormUIActions.toggle());
+  };
+  const showDeleteForm = () => {
+    dispatch(deleteCitizenFormUIActions.toggle());
+  };
+  const showUpdateForm = () => {
+    dispatch(updateCitizenFormUIActions.toggle());
+  };
   return (
     <section id="details-section">
       <div className="container">
@@ -39,13 +54,15 @@ const DetailsSection = () => {
               </div>
             </center>
           </div>
-          <div className="col-md-6 col-sm-12">
-            <div className="details-img">
-              <img
-                className="rounded img-fluid"
-                src={empDetailsImg}
-                alt="صورة معلومات الموظف"
-              />
+          <div className="col-md-4 col-sm-12  d-grid align-content-center">
+            <div className="btns d-flex flex-column gap-5 me-auto">
+              <button onClick={showCreateForm} className="btn btn-success py-2">
+                انشاء حساب للمواطن
+              </button>
+              <button onClick={showUpdateForm} className="btn btn-primary py-2">
+                تعديل بيانات المواطن
+              </button>
+              <button onClick={showDeleteForm} className="btn btn-danger py-2">حذف حساب مواطن</button>
             </div>
           </div>
         </div>

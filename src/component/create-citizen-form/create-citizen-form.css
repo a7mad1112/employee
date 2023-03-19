@@ -1,0 +1,43 @@
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  background-color: rgb(255 255 255 / 26%);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-citizen-form {
+  background-image: linear-gradient(to right, #6c757d, #383e4a);
+  padding: 20px;
+  color: #fff;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.create-citizen-form h2 {
+  font-size: 18px;
+}
+
+.create-citizen-form input {
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+  padding: 8px 5px;
+}
+
+.create-citizen-form input:focus {
+  border: none;
+}

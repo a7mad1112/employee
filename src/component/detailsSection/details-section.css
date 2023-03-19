@@ -20,8 +20,15 @@
   font-size: 20px;
 }
 
+#details-section .btns {
+  width: 80%;
+}
+
 @media (max-width: 768px) {
   .details-img {
     display: none;
+  }
+  #details-section .btns {
+    margin: 50px auto 0 !important;
   }
 }
